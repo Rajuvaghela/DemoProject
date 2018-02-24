@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/appcolor"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:id="@+id/lnback"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/left_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Compose"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnattach"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/attchment_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnsend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/send_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/menu_pwhite" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_private_or_oublic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_select_recipients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_select_visible_department"
+                        style="@style/small_grey"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Recipients" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_recipients"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/textgrey" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    style="@style/small_grey"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Select Recipients" />
+
+                <LinearLayout
+                    android:id="@+id/ll_select_cc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_select_visible_branch"
+                        style="@style/small_grey"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="CC" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_select_cc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/textgrey" />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    style="@style/small_grey"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Select CC" />
+
+                <LinearLayout
+                    android:id="@+id/ll_select_bcc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_select_person"
+                        style="@style/small_grey"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Bcc" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_select_bcc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/textgrey" />
+
+                <TextView
+                    android:id="@+id/tv12"
+                    style="@style/small_grey"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Select Bcc" />
+
+
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                 android:id="@+id/linear"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="@dimen/_10sdp"
+                 android:layout_marginLeft="@dimen/_10sdp"
+                 android:layout_marginTop="@dimen/_10sdp"
+                 android:orientation="horizontal"
+                 android:weightSum="2">
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_weight="0.3"
+                     android:gravity="center_vertical">
+
+                     <TextView
+                         android:id="@+id/tv2"
+                         style="@style/bigtext_grey"
+                         android:text="To"
+                         android:textColor="@color/textgrey"
+                         android:textSize="@dimen/_14sdp" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_weight="1.7"
+                     android:gravity="center_vertical"
+                     android:orientation="horizontal">
+
+                     <EditText
+                         android:id="@+id/edt1"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@null"
+                         android:textColor="@color/black"
+                         android:textSize="@dimen/_14sdp" />
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/lightgrey" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="@dimen/_10sdp"
+                 android:layout_marginLeft="@dimen/_10sdp"
+                 android:layout_marginTop="@dimen/_10sdp"
+                 android:orientation="horizontal"
+                 android:weightSum="2">
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_weight="0.3"
+                     android:gravity="center_vertical">
+
+                     <TextView
+                         android:id="@+id/tv3"
+                         style="@style/bigtext_grey"
+                         android:text="CC"
+                         android:textColor="@color/textgrey" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_weight="1.7"
+                     android:gravity="center_vertical"
+                     android:orientation="horizontal">
+
+                     <EditText
+                         android:id="@+id/edt2"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@null"
+                         android:textColor="@color/black"
+                         android:textSize="@dimen/_14sdp" />
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/lightgrey" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="@dimen/_10sdp"
+                 android:layout_marginLeft="@dimen/_10sdp"
+                 android:layout_marginTop="@dimen/_10sdp"
+                 android:orientation="horizontal"
+                 android:weightSum="2">
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_weight="0.3"
+                     android:gravity="center_vertical">
+
+                     <TextView
+                         android:id="@+id/tv4"
+                         style="@style/bigtext_grey"
+                         android:text="BCC"
+                         android:textColor="@color/textgrey" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_weight="1.7"
+                     android:gravity="center_vertical"
+                     android:orientation="horizontal">
+
+                     <EditText
+                         android:id="@+id/edt3"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@null"
+                         android:textColor="@color/black"
+                         android:textSize="@dimen/_14sdp" />
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/lightgrey" />-->
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt4"
+                    style="@style/edittext_big"
+                    android:background="@null"
+                    android:hint="Subject" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/lightgrey" />
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt5"
+                    style="@style/edittext_big"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@null"
+                    android:hint="Compose Mail" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_select_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="visible">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

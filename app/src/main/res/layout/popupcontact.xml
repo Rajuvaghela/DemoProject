@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv6"
+            style="@style/bigtext_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:text="Add to Favourite" />
+
+        <TextView
+            android:id="@+id/tv7"
+            style="@style/bigtext_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:text="Add to Contact" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/bigtext_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:text="View Contact" />
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/bigtext_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:text="View Profile" />
+
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/bigtext_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:text="Resend Invite" />
+
+        <TextView
+            android:id="@+id/tv4"
+            style="@style/bigtext_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:text="Share" />
+
+        <TextView
+            android:id="@+id/tv5"
+            style="@style/bigtext_black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:text="Send Email" />
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

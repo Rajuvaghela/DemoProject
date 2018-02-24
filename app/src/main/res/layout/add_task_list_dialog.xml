@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appcolor"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/appcolor"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/lnback"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/left_white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_task"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/login_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp">
+
+                        <EditText
+                            android:id="@+id/et_name_of_task"
+                            style="@style/edittext_big"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:hint="@string/name_of_task"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_name_of_task"
+                        style="@style/small_grey"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="@string/enter_name_of_task" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp">
+
+                        <EditText
+                            android:id="@+id/et_task_des"
+                            style="@style/edittext_big"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:hint="@string/task_des" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_task_des"
+                        style="@style/small_grey"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="@string/enter_task_des" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@color/lightgrey2">
+
+                    <LinearLayout
+                        android:id="@+id/ln_add_task"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_add_task"
+                            style="@style/bigtext_diffrent"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:paddingRight="@dimen/_15sdp"
+                            android:text="ADD" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_toRightOf="@+id/ln_add_task"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_cancel"
+                            style="@style/bigtext_appcolor"
+                            android:layout_gravity="right|center_vertical"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:text="CANCEL" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

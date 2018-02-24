@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Item1"
+        android:icon="@drawable/post_popup"
+        android:title="Write Post" />
+
+    <item
+        android:id="@+id/Item2"
+        android:icon="@drawable/messenger_popup"
+        android:title="Send as Message" />
+
+</menu>

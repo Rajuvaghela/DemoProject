@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appcolor"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/appcolor"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/lnmainback"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/left_white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Polls"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_add_polls_question"
+                        style="@style/edittext_big"
+                        android:hint="Enter Question" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        style="@style/small_grey"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Ask Question Whatever You Want To Ask" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/edit_option1"
+                                style="@style/edittext_big"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:hint="Option1" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/add"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            style="@style/small_grey"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="Give Option Of Answer" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/edit_option2"
+                                style="@style/edittext_big"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:hint="Option2" />
+
+
+                            <ImageView
+                                android:id="@+id/add"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:background="@drawable/add"
+                                android:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv4"
+                            style="@style/small_grey"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="Give Option Of Answer" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/liner_choice3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/edit_option3"
+                                style="@style/edittext_big"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:hint="Option3" />
+
+                            <ImageView
+                                android:id="@+id/add2"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:background="@drawable/add"
+                                android:visibility="visible" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv5"
+                            style="@style/small_grey"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="Give Option Of Answer" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/liner_choice4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/edit_option4"
+                                style="@style/edittext_big"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:hint="Option4" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv6"
+                            style="@style/small_grey"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="Give Option Of Answer" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_plus"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:background="@drawable/ic_plus_red" />
+
+                        <TextView
+                            android:id="@+id/txt_days_count"
+                            style="@style/bigtext_black"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:text="1" />
+
+                        <ImageView
+                            android:id="@+id/img_minus"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:background="@drawable/ic_minus_red" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv7"
+                        style="@style/small_grey"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Polls length (Days)" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spiner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv8"
+                        style="@style/small_grey"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Display result" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_select_department"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/tv_select_visible_department"
+                            style="@style/small_grey"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="@string/select_department" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_select_visible_department"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv9"
+                        style="@style/small_grey"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="@string/visible_to_department" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/ll_select_branch"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_select_visible_branch"
+                            style="@style/small_grey"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="@string/select_branch" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_select_visible_branch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv10"
+                        style="@style/small_grey"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="@string/visible_to_branch" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/lightgrey2"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ll_create_polls"
+                    android:layout_marginLeft="@dimen/_18sdp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_createpolls"
+                        style="@style/small_different"
+                        android:text="CREATE POLLS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_18sdp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cancle"
+                        style="@style/small_appcolor"
+                        android:text="CANCEL" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

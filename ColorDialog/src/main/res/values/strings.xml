@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ColorDialog</string>
+    <string name="close_app">Are you sure want to close app?</string>
+    <string name="logout">Are you sure want to logout?</string>
+    <string name="positiveButton">Yes</string>
+    <string name="negativeButton">No</string>
+</resources>

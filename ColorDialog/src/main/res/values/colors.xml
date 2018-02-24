@@ -1,0 +1,14 @@
+<resources>
+    <color name="color_dialog_gray">#bd1820</color>
+    <color name="color_dialog_content">#bd1820</color>
+    <color name="color_dialog_title">#bd1820</color>
+    <color name="color_dialog_content_prompt">#343434</color>
+
+    <color name="color_type_info">#bd1820</color>
+    <color name="color_type_help">#bd1820</color>
+    <color name="color_type_wrong">#bd1820</color>
+    <color name="color_type_warning">#bd1820</color>
+    <color name="color_type_success">#bd1820</color>
+    <color name="dialog">#bd1820</color>
+    <color name="white">#bd1820</color>
+</resources>

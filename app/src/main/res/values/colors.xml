@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#AD1B16</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#014470</color>
+    <color name="white">#FFFFFF</color>
+    <color name="offwhite">#f2f2f2</color>
+    <color name="offwhite2">#e5e5e5</color>
+    <color name="appcolor2">#bd1820</color>
+
+    <color name="calcolor1">#FE7642</color>
+    <color name="calcolor2">#E32B23</color>
+    <color name="calcolor3">#DEADFA</color>
+    <color name="calcolor4">#A0C0F8</color>
+    <color name="calcolor5">#5884E2</color>
+    <color name="calcolor6">#22D6E0</color>
+    <color name="calcolor7">#6AE7C1</color>
+    <color name="calcolor8">#43B35A</color>
+    <color name="calcolor9">#FFD56F</color>
+    <color name="calcolor10">#FFB97A</color>
+    <color name="calcolor11">#FF8A80</color>
+    <color name="calcolor12">#E1E1E1</color>
+
+    <color name="black">#000000</color>
+    <color name="textgrey">#BDBDBD</color>
+    <color name="textdarkgrey">#9E9E9E</color>
+    <color name="lightgrey">#e9ebee</color>
+    <color name="lightgrey3">#DCDEE3</color>
+    <color name="darkgrey2">#8a8a8b</color>
+    <color name="darkgrey">#8a8a8b</color>
+    <color name="background">#E0E0E0</color>
+    <color name="lightgrey2">#FAFAFA</color>
+    <color name="gry1">#f9f9f9</color>
+    <color name="gry2">#f3f3f3</color>
+    <color name="progress">#2F2769</color>
+    <color name="yellow">#FFF9C3</color>
+    <color name="green">#5BB65F</color>
+
+    <color name="blue">#014470</color>
+    <color name="green2">#1DA195</color>
+
+    <color name="transferant">#80000000</color>
+    <color name="darkgre3">#B9B8B8</color>
+    <color name="profile_transferant">#80ffffff</color>
+    <color name="view">#BDBDBD</color>
+    <color name="view_black">#424242</color>
+    <color name="view_grey">#616161</color>
+    <color name="radio">#757575</color>
+    <color name="yellow1">#FF9800</color>
+    <color name="green3">#009688</color>
+    <color name="border_color">#d4d4d4</color>
+
+    <color name="login_grey">#bcffffff</color>
+    <color name="login_grey2">#f8d5d5d5</color>
+    <color name="login_blue">#80014470</color>
+
+</resources>

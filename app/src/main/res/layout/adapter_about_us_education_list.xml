@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_weight="2.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_university_name"
+                    style="@style/bigtext_black"
+                    android:layout_marginTop="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/tv_education_deatil"
+                    style="@style/small_grey"
+                    android:layout_marginTop="@dimen/_3sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contactmenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="0.4"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/menured" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+
+            android:background="@color/view" />
+
+    </LinearLayout>
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+         <TextView
+             android:id="@+id/tv_university_name"
+             style="@style/bigtext_black"
+             android:layout_marginTop="@dimen/_10sdp"
+             android:text="St Annes High School" />
+
+         <TextView
+             android:id="@+id/tv_education_deatil"
+             style="@style/small_grey"
+             android:layout_marginTop="@dimen/_3sdp"
+             android:text="class of 1988 - ahmedabad, India" />
+
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/_1sdp"
+             android:layout_marginBottom="@dimen/_10sdp"
+             android:layout_marginTop="@dimen/_10sdp"
+             android:background="@color/view"></View>
+
+     </LinearLayout>-->
+
+</LinearLayout>

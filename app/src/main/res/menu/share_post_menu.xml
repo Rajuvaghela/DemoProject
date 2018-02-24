@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/share_with_my_office"
+        android:title="Share with my office" />
+    <item
+        android:id="@+id/share_with_par_office"
+        android:title="Share with particular office" />
+    <item
+        android:id="@+id/share_with_clg_timeline"
+        android:title="Share with Colleagues's timeline" />
+    <item
+        android:id="@+id/share_public"
+        android:title="Share now(Public)" />
+</menu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/addtocontact"
+            android:title="Add to Contact" />
+
+        <item
+            android:id="@+id/addtofavourite"
+            android:title="Add to Favourite" />
+<!--
+        <item
+            android:title="Resent Invite" />
+
+        <item
+            android:title="Share" />-->
+
+        <item
+            android:title="Send Email" />
+
+        <!--<item
+            android:title="View Contact" />
+
+        <item
+            android:title="View Profile" />-->
+
+</menu>

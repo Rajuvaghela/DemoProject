@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="2"
+        android:gravity="center|left"
+        android:orientation="vertical"
+        android:paddingLeft="3dp"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:id="@+id/download_custometitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#566573" />
+
+        <TextView
+            android:id="@+id/customtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:paddingBottom="5dp"
+            android:text="content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#566573" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingRight="3dp">
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:55"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#566573" />
+
+    </LinearLayout>
+
+</LinearLayout>

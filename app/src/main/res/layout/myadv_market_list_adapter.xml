@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/main_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/market_photo"
+            android:layout_width="@dimen/_145sdp"
+            android:layout_height="@dimen/_145sdp"
+            android:contentDescription="@string/action_settings"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_145sdp"
+            android:layout_height="@dimen/_145sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/edit_market"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#88000000"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:background="@drawable/edit_market" />
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            style="@style/very_small_black"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="EDIT"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/market_photo"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/market_desc"
+                style="@style/bigtext_black"
+                android:layout_alignParentBottom="true"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/market_rs"
+                style="@style/small_black"
+                android:layout_alignParentBottom="true"
+                android:maxLines="1"
+                android:text="" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Item1"
+        android:title="View Contact" />
+
+    <item
+        android:id="@+id/Item2"
+        android:title="View Profile" />
+
+    <item
+        android:id="@+id/Item3"
+        android:title="Resend Invite" />
+
+    <item
+        android:id="@+id/Item4"
+        android:title="Share" />
+
+
+    <item
+        android:id="@+id/Item5"
+        android:title="Send Email" />
+
+    <item
+        android:id="@+id/Item6"
+        android:title="Delete" />
+
+</menu>

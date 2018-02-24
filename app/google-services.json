@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "155371548147",
+    "firebase_url": "https://adarsh-c87fa.firebaseio.com",
+    "project_id": "adarsh-c87fa",
+    "storage_bucket": "adarsh-c87fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155371548147:android:ad0f3659764db2ae",
+        "android_client_info": {
+          "package_name": "com.ext.adarsh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155371548147-mlb8johj4mrcvvq2bdu0psdv6ttkq9m5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ext.adarsh",
+            "certificate_hash": "089ba8e9eb62c414e30305833db094e724a8e45a"
+          }
+        },
+        {
+          "client_id": "155371548147-6csgehoqfi9uu6riic3m7gqfi4k7mi8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXWpTP3ws3OMLJcMnn2EMdotipVPnMBck"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155371548147-6csgehoqfi9uu6riic3m7gqfi4k7mi8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
